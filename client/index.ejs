@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blockchain Transaction</title>
+    </head>
+    <body>
+        <% if(transactionValue) {%>
+            <p> New transaction saved! <%=transactionValue %> </p>
+        <% } %>
+        <h1>Last Block</h1>
+        <p><%=lastBlock %></p>
+        <hr>
+        <a href="/all">All Blocks</a>
+        <hr>
+        <form method="POST" action="/">
+            <label for="transaction">Transaction:</label>
+            <input type="text" id="transaction" name="transaction">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
